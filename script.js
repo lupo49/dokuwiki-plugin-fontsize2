@@ -102,14 +102,14 @@ function plugin_fontsize2_toolbar_picker() {
       picker.appendChild(btn);
     }
   }
-  
-
 
   var body = document.getElementsByTagName('body')[0];
   body.appendChild(picker);	// attach the picker <div> to the page body
   toolbar.appendChild(p_btn);	// attach the picker button to the toolbar
 }
 
-addInitEvent(plugin_fontsize2_toolbar_picker);
+jQuery(function() {
+    plugin_fontsize2_toolbar_picker();
+});
 
 //Setup VIM: ex: et ts=2 sw=2 enc=utf-8 :
