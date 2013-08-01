@@ -33,7 +33,7 @@ var plugin_fontsize2 = {
   "10":        "10em" 
 };
 
-if (isUndefined(user_fontsize2)) {
+if (typeof user_fontsize2 == 'undefined') {
   var user_fontsize2 = { };
 }
 
